@@ -1,7 +1,15 @@
 main() {
 
-  // Constants 
+  // ${} is String Interpolation for insertion of object value in String.
+
+  // Objects 
+  const obj = 'anything';
+  print('"$obj" is an object.\n');
+
+  // Constants and final. Instance variables can be final but not const
   const x = 5;
+  final int y = 7;
+  final z = 8;
 
   print('Since x is a constant with value $x, it cant be changed.\n');
 
@@ -10,7 +18,15 @@ main() {
   var pi = 3.14;
   var name = 'Flutter';
 
+  // Variables and Objects can be declared without assignment 
+  // They will have a Dynamic Data Type. 
+  
+  var variable;
+  Object object;
+
   print('Variables created:\na = ${a},\npi = ${pi},\nname = $name\n');
+
+  // Primitive DataTypes
 
   // Integer and double
   int num1 = 23;
@@ -18,6 +34,11 @@ main() {
   double num3 = 21.8;
 
   print('$num1 and $num2 are Integers, while $num3 is a double.\n');
+
+  // String 
+  String str = "Flutter";
+
+  print('"$str" is an example of String\n');
 
   // Booleans
   bool amILearningDart = true;
@@ -34,6 +55,17 @@ main() {
   };
 
   print('Topics you will learn in Dart is ${basicTopics[0]}, ${basicTopics[1]}, ${basicTopics[2]}, ${basicTopics[3]}');
-  print('Following are the description of modules mentioned:\n${topicDescription[1]},\n${topicDescription[2]},\n${topicDescription[3]},\n${topicDescription[4]}');
+  print('Following are the description of modules mentioned:\n${topicDescription[1]},\n${topicDescription[2]},\n${topicDescription[3]},\n${topicDescription[4]}\n');
+
+  Set setOfLanguages = {
+    'Python',
+    'Java',
+    'C++',
+    'Dart'
+  };
+  print('Set of Languages = $setOfLanguages');
 
 }
+
+  // Sets 
+  
