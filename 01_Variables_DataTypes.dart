@@ -57,6 +57,7 @@ main() {
   print('Topics you will learn in Dart is ${basicTopics[0]}, ${basicTopics[1]}, ${basicTopics[2]}, ${basicTopics[3]}');
   print('Following are the description of modules mentioned:\n${topicDescription[1]},\n${topicDescription[2]},\n${topicDescription[3]},\n${topicDescription[4]}\n');
 
+  // Sets
   Set setOfLanguages = {
     'Python',
     'Java',
@@ -66,6 +67,4 @@ main() {
   print('Set of Languages = $setOfLanguages');
 
 }
-
-  // Sets 
   
