@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 void main() {
   
   // Defining Operands 
@@ -40,8 +38,8 @@ void main() {
   List list = data['list'] as List;
   print(list);
 
-  print('$a is Float = ${a is Float}');
-  print('$a is! Float = ${a is! Float}');
+  print('$a is double = ${a is double}');
+  print('$a is! double = ${a is! double}');
 
   // Assignment Operator 
   a = 20;
