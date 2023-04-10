@@ -15,11 +15,11 @@ class Computer{
   int? a;   // Creates a nullable integer a
   int b = 1;    // Creates an integer b with value 1
 
-  final int c = 2;    // Integer c which can only be assigned once, which we did as 2
+  final int c;    // Integer c which can only be assigned once, which we did as 2
 
   late int d; // nullable now but will be not null in future
   late final int e;   // nullable for now, single time assignable integer
-  late final int f = 5;   // nullable at initialisation, single time assignable intger assigned the value 5
+  late final int f;   // nullable at initialisation, single time assignable intger assigned the value 5
 
   // Static Fields can exist without the instance of class
   static int g = 6;   // Static Integer Variable
@@ -29,11 +29,36 @@ class Computer{
 
   static const int k = 10;    // Static Compile Time Constant Integer
 
+  
+  // Methods - Functions defined inside the class
+
+  // Constructor - responsible for initialisation of fields 
+  // Constructors don't have return type
+  // Static Variable cant be assigned in a class 
+  Computer(
+    this._private, {
+        this.a, 
+        required this.b, 
+        required this.c, 
+        required this.d,
+        required this.e, 
+        required this.f
+      }
+    )  {}
+
 }
 
 void main() {
 
-  var computer = Computer();
+  var computer = Computer(
+    1,
+    a: 2,
+    b: 3,
+    c: 4,
+    d: 5,
+    e: 6,
+    f: 7
+  );
 
   // computer
   //   ..a = 3
@@ -56,6 +81,8 @@ void main() {
   print('computer.i --> ${Computer.i}');
   print('computer.j --> ${Computer.j}');
   print('computer.k --> ${Computer.k}\n');
+
+  
 
 }
 
