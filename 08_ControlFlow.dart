@@ -12,6 +12,7 @@ import 'dart:math';
 void main() {
 
   // if, else if and else
+
   dynamic temperatureCelcius = (Random().nextDouble() * 100.00).toStringAsFixed(2);
   temperatureCelcius = double.parse(temperatureCelcius);
 
@@ -23,6 +24,7 @@ void main() {
     print("Temperature $temperatureCelcius is cool!\n");
   }
 
+
   //  for
 
   print("Even numbers between 1 to 11 are: ");
@@ -33,7 +35,9 @@ void main() {
   }
   print('');
 
+
   //  while 
+  
   print('Odd numbers between 0 and 10 are: ');
   int i = 0;
   while (i <= 10) {
@@ -44,7 +48,9 @@ void main() {
   }
     print('');
 
+
   // Do while loop 
+  
   print('Odd numbers between 0 and 10 are: ');
   int y = 0;
   do {
@@ -54,6 +60,7 @@ void main() {
     y++;
   } while (y < 10); 
   print('');
+
 
   // Switch Case
   //  Suppose have four options in our Social Media App: 
